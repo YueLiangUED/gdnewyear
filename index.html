@@ -16,7 +16,6 @@
         music.load();
         music.loop = true;
         music.volume = .5;
-        $('body').append(music);
         music.id = 'music';
         imgLoader([
             './images/clock.png',
@@ -35,6 +34,7 @@
             if (percentage === 1) {
                 $('#loader').remove();
                 $('#firPage').show();
+                $('body').append(music);
                 music.play();
                 firFadeIn();
                 setTimeout(firTxtShow,3000);
