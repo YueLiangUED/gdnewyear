@@ -1,6 +1,8 @@
 html,
 body {
   font-family: "Microsoft YaHei";
+  -webkit-user-select: none;
+  user-select: none;
 }
 @keyframes tick-tock {
   to {
