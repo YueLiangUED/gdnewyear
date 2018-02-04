@@ -16,6 +16,7 @@
         music.load();
         music.loop = true;
         music.volume = .5;
+        $('body').append(music);
         imgLoader([
             './images/clock.png',
             './images/clock_1.png',
@@ -34,7 +35,6 @@
                 $('#loader').remove();
                 $('#firPage').show();
                 music.id = 'music';
-                $('body').append(music);
                 music.play();
                 firFadeIn();
                 setTimeout(firTxtShow,3000);
