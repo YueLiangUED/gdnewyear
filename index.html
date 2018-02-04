@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>广州移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <script src="js/less-1.7.0.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        var music = document.createElement("AUDIO");
+        music.src = './audio/music.mp3';
+        music.load();
+        music.loop = true;
+        music.volume = .5;
+        imgLoader([
+            './images/clock.png',
+            './images/clock_1.png',
+            './images/clock_2.png',
+            './images/light.png',
+            './images/bg_01.jpg',
+            './images/bg_02.jpg',
+            './images/bg_03.jpg'
+        ],function (percentage) {
+            var percentT = percentage * 100;
+
+            $('#loader_info').html('努力加载中' + (parseInt(percentT)) + '%');
+            if (percentage === 1) {
+                $('#loader').remove();
+                $('#firPage').show();
+                music.id = 'music';
+                music.play();
+                firFadeIn();
+                setTimeout(firTxtShow,3000);
+            }
+        });
+        function firFadeIn() {
+            $('#light').fadeIn(2500);
+        }
+        function firTxtShow() {
+            var i = 0,
+                    page2TxtShow = document.getElementById('page2TxtShow'),
+                    page2Txt = document.getElementById('page2Txt');
+            var timerTxt = setInterval(function(){
+                page2TxtShow.innerHTML = page2Txt.innerHTML.substring(0, i);
+                i++;
+                if(page2Txt.innerHTML == page2TxtShow.innerHTML){
+                    clearInterval(timerTxt);
+                };
+            },60);
+        }
+    </script>
+</head>
+<body>
+<!--loading-->
+<section id="loader">
+    <p id="loader_info"></p>
+</section>
+<main>
+    <section id="conBox">
+        <div>
+            <span id="light"></span>
+            <p id="page2Txt">我，是一名普通白领，<br>过着朝九（jia ban）晚五（ao ye）的生活。</p>
+            <p id="page2TxtShow"></p>
+        </div>
+        <div>
+            <span></span>
+        </div>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div id="clockBtn">
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/index.js"></script>
