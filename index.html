@@ -5,11 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>广州移动</title>
-    <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet/less" type="text/css" href="css/style.less">
-    <script src="js/less-1.7.0.min.js"></script>
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/imgLoader.js"></script>
     <script>
         var music = document.createElement("AUDIO");
         music.src = './audio/music.mp3';
@@ -17,6 +12,15 @@
         music.loop = true;
         music.volume = .5;
         music.id = 'music';
+        $('body').append(music);
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <script src="js/less-1.7.0.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+
         imgLoader([
             './images/clock.png',
             './images/clock_1.png',
@@ -34,7 +38,6 @@
             if (percentage === 1) {
                 $('#loader').remove();
                 $('#firPage').show();
-                $('body').append(music);
                 music.play();
                 firFadeIn();
                 setTimeout(firTxtShow,3000);
