@@ -12,11 +12,13 @@
     <script src="js/imgLoader.js"></script>
     <script>
         var music = document.createElement("AUDIO");
-        music.src = './audio/music.mp3';
-        music.load();
-        music.loop = true;
-        music.volume = .5;
-        music.id = 'music';
+        setTimeout(function () {
+            music.src = './audio/music.mp3';
+            music.load();
+            music.loop = true;
+            music.volume = .5;
+            music.id = 'music';
+        },0);
         imgLoader([
             './images/clock.png',
             './images/clock_1.png',
