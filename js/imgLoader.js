@@ -8,10 +8,10 @@
     /**
      * @param imgList 要加载的图片地址列表，['aa/asd.png','aa/xxx.png']
      * @param callback 每成功加载一个图片之后的回调，并传入“已加载的图片总数/要加载的图片总数”表示进度
-     * @param timeout 每个图片加载的超时时间，默认为5s
+     * @param timeout 每个图片加载的超时时间，默认为10s
      */
     var loader = function (imgList, callback, timeout) {
-        timeout = timeout || 5000;
+        timeout = timeout || 10000;
         imgList = isArray(imgList) && imgList || [];
         callback = typeof(callback) === 'function' && callback;
 
