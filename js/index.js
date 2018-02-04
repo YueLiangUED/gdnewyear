@@ -22,8 +22,18 @@ $(function () {
     var scrollSpeed=10,
         step = 0;
     function scrollMarquee() {
-        step--;
-        $('#conBox').css('transform','translateY('+step+'px)');
+        step -= 2;
+        switch (step){
+            case -120:
+                console.log(step);
+                break;
+            case 2412:
+        }
+        if(step <= -31000){
+            return;
+        }
+        $('#conBox').css('transform','translateY('+step/100+'rem)');
+        console.log($('#conBox').css('transform'));
     }
     $('#clockBtn').on('touchstart',function () {
         $(this).find('span').addClass('act');

@@ -178,6 +178,7 @@ main section:nth-child(1) div:nth-child(25) {
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(26) {
+  height: 2.62rem;
   background: url("../images/bg_26.jpg") center no-repeat;
   background-size: cover;
 }
