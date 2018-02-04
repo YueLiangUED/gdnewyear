@@ -44,5 +44,5 @@
 
     "function" === typeof define && define.cmd ? define(function () {
         return loader
-    }) : window.imgLoader = loader;
+    }) : window.preLoader = loader;
 })();
