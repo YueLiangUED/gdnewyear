@@ -23,20 +23,20 @@ main {
 }
 main section:nth-child(1) {
   position: absolute;
-  top: 0;
   overflow: hidden;
   width: 7.5rem;
-  height: 120.06rem;
+  height: 333.5rem;
 }
 main section:nth-child(1) div {
   position: relative;
   width: 7.5rem;
-  height: 12.06rem;
+  height: 13.34rem;
 }
 main section:nth-child(1) div span {
   position: absolute;
 }
 main section:nth-child(1) div:nth-child(1) {
+  height: 12.06rem;
   background: url("../images/bg_01.jpg") center no-repeat;
   background-size: cover;
 }
@@ -65,6 +65,7 @@ main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
   display: none;
 }
 main section:nth-child(1) div:nth-child(2) {
+  height: 12.06rem;
   background: url("../images/bg_02.jpg") center no-repeat;
   background-size: cover;
 }
@@ -78,7 +79,106 @@ main section:nth-child(1) div:nth-child(2) span {
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(3) {
+  height: 12.06rem;
   background: url("../images/bg_03.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(4) {
+  height: 12.06rem;
+  background: url("../images/bg_04.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(5) {
+  height: 12.06rem;
+  background: url("../images/bg_05.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(6) {
+  height: 12.06rem;
+  background: url("../images/bg_06.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(7) {
+  height: 7.68rem;
+  background: url("../images/bg_07.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(8) {
+  height: 13.38rem;
+  background: url("../images/bg_08.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(9) {
+  height: 13.3rem;
+  background: url("../images/bg_09.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(10) {
+  background: url("../images/bg_10.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(11) {
+  background: url("../images/bg_11.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(12) {
+  background: url("../images/bg_12.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(13) {
+  background: url("../images/bg_13.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(14) {
+  background: url("../images/bg_14.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(15) {
+  background: url("../images/bg_15.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(16) {
+  background: url("../images/bg_16.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(17) {
+  background: url("../images/bg_17.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(18) {
+  background: url("../images/bg_18.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(19) {
+  background: url("../images/bg_19.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(20) {
+  background: url("../images/bg_20.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(21) {
+  background: url("../images/bg_21.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(22) {
+  background: url("../images/bg_22.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(23) {
+  background: url("../images/bg_23.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(24) {
+  background: url("../images/bg_24.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(25) {
+  background: url("../images/bg_25.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(26) {
+  background: url("../images/bg_26.jpg") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(2) div {

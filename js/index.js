@@ -23,7 +23,7 @@ $(function () {
         step = 0;
     function scrollMarquee() {
         step--;
-        $('#conBox').css('top',step);
+        $('#conBox').css('transform','translateY('+step+'px)');
     }
     $('#clockBtn').on('touchstart',function () {
         $(this).find('span').addClass('act');
@@ -32,6 +32,9 @@ $(function () {
     $('#clockBtn').on('touchend',function () {
         $(this).find('span').removeClass('act');
         clearInterval(timer1);
+    });
+    $('#clockBtn').on('contextmenu', function(e){
+        e.preventDefault();
     });
     
     
