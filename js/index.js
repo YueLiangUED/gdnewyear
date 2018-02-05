@@ -68,7 +68,7 @@ $(function () {
                 eleFadeIn($('#fadeIn_17'));
                 break;
         }
-        if(step <= -31000){
+        if(step <= -31100){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
