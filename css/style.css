@@ -34,6 +34,7 @@ main section:nth-child(1) div {
 }
 main section:nth-child(1) div span {
   position: absolute;
+  display: none;
 }
 main section:nth-child(1) div:nth-child(1) {
   height: 12.06rem;
@@ -70,7 +71,6 @@ main section:nth-child(1) div:nth-child(2) {
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(2) span {
-  display: none;
   top: 4.91rem;
   left: 1.86rem;
   width: 1.71rem;
@@ -88,9 +88,41 @@ main section:nth-child(1) div:nth-child(4) {
   background: url("../images/bg_04.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(4) span {
+  top: 8.9rem;
+  left: 4.46rem;
+  width: .58rem;
+  height: .45rem;
+  background: url("../images/fadeIn_02.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(5) {
   height: 12.06rem;
   background: url("../images/bg_05.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(5) span:nth-child(1) {
+  left: 2.42rem;
+  bottom: 1.29rem;
+  width: 3.28rem;
+  height: 1.42rem;
+  background: url("../images/fadeIn_03.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(5) span:nth-child(2) {
+  left: 2.3rem;
+  bottom: 2.38rem;
+  width: 3.27rem;
+  height: 1.41rem;
+  background: url("../images/fadeIn_04.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(5) span:nth-child(3) {
+  left: 2.17rem;
+  bottom: 3.48rem;
+  width: 3.28rem;
+  height: 1.41rem;
+  background: url("../images/fadeIn_05.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(6) {
@@ -103,9 +135,41 @@ main section:nth-child(1) div:nth-child(7) {
   background: url("../images/bg_07.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(7) span:nth-child(1) {
+  left: .08rem;
+  bottom: 2.97rem;
+  width: 3.52rem;
+  height: 1.14rem;
+  background: url("../images/fadeIn_06.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(7) span:nth-child(2) {
+  right: 0;
+  bottom: 1.34rem;
+  width: 3.12rem;
+  height: 1rem;
+  background: url("../images/fadeIn_07.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(8) {
   height: 13.38rem;
   background: url("../images/bg_08.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(8) span:nth-child(1) {
+  top: 2.89rem;
+  right: .41rem;
+  width: 3rem;
+  height: 1.95rem;
+  background: url("../images/fadeIn_08.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(8) span:nth-child(2) {
+  top: 2.35rem;
+  left: .94rem;
+  width: 2.51rem;
+  height: 1.74rem;
+  background: url("../images/fadeIn_09.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(9) {
@@ -133,6 +197,14 @@ main section:nth-child(1) div:nth-child(14) {
   background: url("../images/bg_14.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(14) span {
+  right: .18rem;
+  bottom: .53rem;
+  width: 4.28rem;
+  height: 1.4rem;
+  background: url("../images/fadeIn_10.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(15) {
   background: url("../images/bg_15.jpg") center no-repeat;
   background-size: cover;
@@ -145,24 +217,72 @@ main section:nth-child(1) div:nth-child(17) {
   background: url("../images/bg_17.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(17) span {
+  top: 3.21rem;
+  right: .32rem;
+  width: 2.56rem;
+  height: .93rem;
+  background: url("../images/fadeIn_11.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(18) {
   background: url("../images/bg_18.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(18) span {
+  top: 1.62rem;
+  left: .42rem;
+  width: 3.53rem;
+  height: 1.18rem;
+  background: url("../images/fadeIn_12.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(19) {
   background: url("../images/bg_19.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(19) span {
+  top: 1.8rem;
+  right: .44rem;
+  width: 3.62rem;
+  height: 1.35rem;
+  background: url("../images/fadeIn_13.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(20) {
   background: url("../images/bg_20.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(20) span {
+  top: .34rem;
+  left: .22rem;
+  width: 5.17rem;
+  height: 1.82rem;
+  background: url("../images/fadeIn_14.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(21) {
   background: url("../images/bg_21.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(21) span {
+  top: .98rem;
+  right: -0.4rem;
+  width: 4.42rem;
+  height: 1.65rem;
+  background: url("../images/fadeIn_15.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(22) {
   background: url("../images/bg_22.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(22) span {
+  top: .22rem;
+  right: -0.37rem;
+  width: 4.11rem;
+  height: 5.26rem;
+  background: url("../images/fadeIn_16.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(23) {
@@ -171,6 +291,14 @@ main section:nth-child(1) div:nth-child(23) {
 }
 main section:nth-child(1) div:nth-child(24) {
   background: url("../images/bg_24.jpg") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(24) span {
+  top: .49rem;
+  left: .26rem;
+  width: 4.64rem;
+  height: 2.09rem;
+  background: url("../images/fadeIn_17.png") center no-repeat;
   background-size: cover;
 }
 main section:nth-child(1) div:nth-child(25) {

@@ -24,16 +24,28 @@ $(function () {
     function scrollMarquee() {
         step -= 2;
         switch (step){
-            case -120:
-                console.log(step);
+            case -1000:
+                eleFadeIn($('#fadeIn_01'));
                 break;
-            case 2412:
+            case -3800:
+                eleFadeIn($('#fadeIn_02'));
+                break;
+            case -4800:
+                eleFadeIn($('#fadeIn_03'));
+                eleFadeIn($('#fadeIn_04'),1500);
+                eleFadeIn($('#fadeIn_05'),2500);
+                break;
+            case -6750:
+                eleFadeIn($('#fadeIn_06'));
+                eleFadeIn($('#fadeIn_07'),2000);
         }
         if(step <= -31000){
+            $('#clockBtn').off();
+            $('#clockBtn').remove();
             return;
         }
+        console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
-        console.log($('#conBox').css('transform'));
     }
     $('#clockBtn').on('touchstart',function () {
         $(this).find('span').addClass('act');
@@ -46,6 +58,14 @@ $(function () {
     $('#clockBtn').on('contextmenu', function(e){
         e.preventDefault();
     });
+
+
+    function eleFadeIn(ele,t) {
+        if(t === null){
+            t = 500;
+        }
+        ele.fadeIn(t);
+    }
     
     
     
