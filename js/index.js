@@ -30,14 +30,43 @@ $(function () {
             case -3800:
                 eleFadeIn($('#fadeIn_02'));
                 break;
-            case -4800:
+            case -4850:
                 eleFadeIn($('#fadeIn_03'));
                 eleFadeIn($('#fadeIn_04'),1500);
                 eleFadeIn($('#fadeIn_05'),2500);
                 break;
-            case -6750:
+            case -6770:
                 eleFadeIn($('#fadeIn_06'));
                 eleFadeIn($('#fadeIn_07'),2000);
+                break;
+            case -7650:
+                eleFadeIn($('#fadeIn_08'));
+                eleFadeIn($('#fadeIn_09'),2000);
+                break;
+            case -16330:
+                eleFadeIn($('#fadeIn_10'));
+                break;
+            case -19800:
+                eleFadeIn($('#fadeIn_11'));
+                break;
+            case -20900:
+                eleFadeIn($('#fadeIn_12'));
+                break;
+            case -22500:
+                eleFadeIn($('#fadeIn_13'));
+                break;
+            case -23650:
+                eleFadeIn($('#fadeIn_14'));
+                break;
+            case -25000:
+                eleFadeIn($('#fadeIn_15'));
+                break;
+            case -26280:
+                eleFadeIn($('#fadeIn_16'));
+                break;
+            case -29000:
+                eleFadeIn($('#fadeIn_17'));
+                break;
         }
         if(step <= -31000){
             $('#clockBtn').off();
