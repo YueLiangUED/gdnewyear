@@ -131,12 +131,11 @@ $(function () {
 
     },false);*/
     $('#clockBtn').on('touchstart',function (e) {
-        e.preventDefault();
+        clearInterval(timer1);
         $(this).find('span').addClass('act');
         timer1 = setInterval(scrollMarquee,scrollSpeed);
     });
     $('#clockBtn').on('touchend',function (e) {
-        e.preventDefault();
         $(this).find('span').removeClass('act');
         clearInterval(timer1);
     });
