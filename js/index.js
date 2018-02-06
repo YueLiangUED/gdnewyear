@@ -68,7 +68,7 @@ $(function () {
                 eleFadeIn($('#fadeIn_17'));
                 break;
         }
-        if(step <= -31100){
+        if(step <= -31000){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
@@ -88,7 +88,7 @@ $(function () {
         e.preventDefault();
     });
 
-
+    //聊天气泡淡入
     function eleFadeIn(ele,t) {
         if(t === null){
             t = 500;
@@ -96,9 +96,60 @@ $(function () {
         ele.fadeIn(t);
     }
     
-    
-    
-    
+    //底部按钮动画
+    var arrowL = 25,
+        $arrowBox = $('#arrowBox'),
+        $arrow_1 = $('#arrow_1'),
+        $arrow_2 = $('#arrow_2'),
+        $arrow_3 = $('#arrow_3'),
+        $arrow_4 = $('#arrow_4');
+    function arrowBoxAnimate() {
+        arrowL++;
+        if(arrowL >= 410){
+            arrowL = 25;
+        }
+        $arrowBox.css('transform','translateX('+arrowL/100+'rem)');
+    }
+    var timerArrowBox = setInterval(arrowBoxAnimate,5);
+    function arrowAnimate() {
+        if($arrow_4.css('display') == 'block'){
+            $arrow_1.hide();
+            $arrow_2.hide();
+            $arrow_3.hide();
+            $arrow_4.hide();
+        }
+        $arrow_1.fadeIn(300);
+        $arrow_2.fadeIn(600);
+        $arrow_3.fadeIn(900);
+        $arrow_4.fadeIn(1200);
+    }
+    var timerArrow = setInterval(arrowAnimate,2000);
+
+    //页面底部跳转按钮
+    var jumpBtn = document.getElementById('jumpBtn'),
+        ww;
+    jumpBtn.addEventListener('touchstart',function (e) {
+        var touches = e.touches[0];
+        ww = touches.clientX - jumpBtn.offsetLeft;
+    });
+    jumpBtn.addEventListener('touchmove',function (e) {
+        var touches = e.touches[0];
+        var oLeft = (touches.clientX - ww)/100;
+        console.log(oLeft);
+        if(oLeft <= .23) {
+            oLeft = .23;
+        }else if(oLeft > document.documentElement.clientWidth - jumpBtn.offsetWidth) {
+            oLeft = (document.documentElement.clientWidth - jumpBtn.offsetWidth);
+        }else if(oLeft >= 5.8){
+            oLeft = 5.8;
+        }else if(oLeft >= 5){
+            window.location.href = '';
+        }
+        jumpBtn.style.left = oLeft + "rem";
+    });
+    jumpBtn.addEventListener('touchend',function (e) {
+        jumpBtn.style.left = .23 + 'rem';
+    });
     //->MUSIC
     wx.config({
         debug: false

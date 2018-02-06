@@ -310,6 +310,64 @@ main section:nth-child(1) div:nth-child(26) {
   background: url("../images/bg_26.jpg") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(26) span {
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: .4rem;
+  margin: auto;
+  width: 7.17rem;
+  height: 1.47rem;
+  background: url("../images/lastBtn.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(26) span i {
+  position: absolute;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(1) {
+  top: .17rem;
+  left: .23rem;
+  width: 1.11rem;
+  height: 1.11rem;
+  background: url("../images/boy.png") center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) {
+  top: .22rem;
+  left: .25rem;
+  width: 2.5rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) em {
+  display: none;
+  position: absolute;
+  top: .18rem;
+  width: .43rem;
+  height: .65rem;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) em:nth-child(1) {
+  right: 1.04rem;
+  background: url("../images/back_1.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) em:nth-child(2) {
+  right: .75rem;
+  background: url("../images/back_2.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) em:nth-child(3) {
+  right: .45rem;
+  background: url("../images/back_3.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(26) span i:nth-child(2) em:nth-child(4) {
+  right: .17rem;
+  background: url("../images/back_4.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(2) div {
   position: fixed;
   left: 0;
