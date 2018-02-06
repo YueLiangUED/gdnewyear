@@ -10,12 +10,7 @@
     <script src="js/less-1.7.0.min.js"></script>
     <script src="js/jquery-1.10.1.min.js"></script>
     <script>
-        var music = document.createElement("AUDIO");
-        music.src = './audio/music.mp3';
-        music.load();
-        music.loop = true;
-        music.volume = .5;
-        music.id = 'music';
+
     </script>
     <script src="js/imgLoader.js"></script>
     <script>
@@ -69,8 +64,13 @@
             './images/fadeIn_16.png',
             './images/fadeIn_17.png',
         ],function (percentage) {
+            var music = document.createElement("AUDIO");
+            music.src = './audio/music.mp3';
+            music.load();
+            music.loop = true;
+            music.volume = .5;
+            music.id = 'music';
             var percentT = percentage * 100;
-
             $('#loader_info').html('努力加载中' + (parseInt(percentT)) + '%');
             if (percentage === 1) {
                 $('body').append(music);
