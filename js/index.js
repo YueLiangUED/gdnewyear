@@ -96,6 +96,18 @@ $(function () {
             case -23650:
                 eleFadeIn($('#fadeIn_14'));
                 break;
+            case -23750:
+                eleFadeIn($('#m1'));
+                break;
+            case -23850:
+                eleFadeIn($('#m2'));
+                break;
+            case -23950:
+                eleFadeIn($('#m3'));
+                break;
+            case -24050:
+                eleFadeIn($('#m4'));
+                break;
             case -25000:
                 eleFadeIn($('#fadeIn_15'));
                 break;
@@ -123,13 +135,7 @@ $(function () {
         //console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
-    /*var clockBtn = document.getElementById('clockBtn');
-    clockBtn.addEventListener('touchstart',function (e) {
 
-    },false);
-    clockBtn.addEventListener('touchstart',function (e) {
-
-    },false);*/
     $('#clockBtn').on('touchstart',function (e) {
         if(e.originalEvent.targetTouches.length ==1){
             $(this).find('span').addClass('act');

@@ -391,6 +391,42 @@ main section:nth-child(1) div:nth-child(20) span {
   background: url("../images/fadeIn_14.png") center no-repeat;
   background-size: cover;
 }
+main section:nth-child(1) div:nth-child(20) i {
+  display: none;
+  position: absolute;
+}
+main section:nth-child(1) div:nth-child(20) i:nth-child(2) {
+  top: 1.47rem;
+  right: 1.99rem;
+  width: 2.86rem;
+  height: 7.3rem;
+  background: url("../images/mom_1.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(20) i:nth-child(3) {
+  top: 2.11rem;
+  left: .48rem;
+  width: 3.57rem;
+  height: 7.55rem;
+  background: url("../images/mom_2.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(20) i:nth-child(4) {
+  bottom: 1.18rem;
+  left: 3.09rem;
+  width: 6.12rem;
+  height: 8.16rem;
+  background: url("../images/mom_3.png") center no-repeat;
+  background-size: cover;
+}
+main section:nth-child(1) div:nth-child(20) i:nth-child(5) {
+  bottom: .18rem;
+  left: 1.12rem;
+  width: 3.17rem;
+  height: 7.86rem;
+  background: url("../images/mom_4.png") center no-repeat;
+  background-size: cover;
+}
 main section:nth-child(1) div:nth-child(21) {
   background: url("../images/bg_21.jpg") center no-repeat;
   background-size: cover;
