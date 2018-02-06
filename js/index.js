@@ -223,27 +223,6 @@ $(function () {
     jumpBtn.addEventListener('touchend',function (e) {
         jumpBtn.style.left = .23 + 'rem';
     });
-    //->MUSIC
-    wx.config({
-        debug: false
-    });
-    wx.ready(function () {
-        function audioAutoPlay(id){
-            var audio = document.getElementById(id),
-                play = function(){
-                    audio.play();
-                    document.removeEventListener("touchstart",play, false);
-                };
-            audio.play();
-            document.addEventListener("WeixinJSBridgeReady", function () {
-                play();
-            }, false);
-            document.addEventListener('YixinJSBridgeReady', function() {
-                play();
-            }, false);
-            document.addEventListener("touchstart",play, false);
-        }
-        audioAutoPlay('music');
-    });
+    
     
 });
