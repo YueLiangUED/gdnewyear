@@ -68,7 +68,7 @@ $(function () {
                 eleFadeIn($('#fadeIn_17'));
                 break;
         }
-        if(step <= -31000){
+        if(step <= -31040){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
@@ -134,7 +134,7 @@ $(function () {
     });
     jumpBtn.addEventListener('touchmove',function (e) {
         var touches = e.touches[0];
-        var oLeft = (touches.clientX - ww)/100;
+        var oLeft = (touches.clientX - ww)/50;
         console.log(oLeft);
         if(oLeft <= .23) {
             oLeft = .23;
