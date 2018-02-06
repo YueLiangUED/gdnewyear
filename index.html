@@ -70,10 +70,11 @@
             music.loop = true;
             music.volume = .5;
             music.id = 'music';
+            $('body').append(music);
             var percentT = percentage * 100;
-            $('#loader_info').html('努力加载中' + (parseInt(percentT)) + '%');
+            $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
-                $('body').append(music);
+
                 music.play();
                 firFadeIn();
                 setTimeout(function () {
@@ -103,6 +104,10 @@
 <body>
 <!--loading-->
 <section id="loader">
+    <div>
+        <img src="./images/loading.gif" alt="loading">
+    </div>
+    <p>努力加载中...</p>
     <p id="loader_info"></p>
 </section>
 <!--loading end-->

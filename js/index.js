@@ -104,7 +104,7 @@ $(function () {
             case -14400:
                 sayShow(say9,say9Show);
                 break;
-            case -14420:
+            case -14430:
                 sayShow(say10,say10Show);
                 break;
             case -16330:
@@ -134,7 +134,7 @@ $(function () {
             case -29000:
                 eleFadeIn($('#fadeIn_17'));
                 break;
-            case -29800:
+            case -29500:
                 sayShow(say12,say12Show);
                 break;
             case -30700:
