@@ -135,7 +135,8 @@ $(function () {
         $(this).find('span').addClass('act');
         timer1 = setInterval(scrollMarquee,scrollSpeed);
     });
-    $('#clockBtn').on('touchend',function () {
+    $('#clockBtn').on('touchend',function (e) {
+        e.preventDefault();
         $(this).find('span').removeClass('act');
         clearInterval(timer1);
     });
