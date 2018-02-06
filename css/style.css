@@ -48,6 +48,7 @@ main section:nth-child(1) {
   overflow: hidden;
   width: 7.5rem;
   height: 333.5rem;
+  background-color: #ffe293;
 }
 main section:nth-child(1) div {
   position: relative;

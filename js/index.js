@@ -123,7 +123,15 @@ $(function () {
         //console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
-    $('#clockBtn').on('touchstart',function () {
+    /*var clockBtn = document.getElementById('clockBtn');
+    clockBtn.addEventListener('touchstart',function (e) {
+
+    },false);
+    clockBtn.addEventListener('touchstart',function (e) {
+
+    },false);*/
+    $('#clockBtn').on('touchstart',function (e) {
+        e.preventDefault();
         $(this).find('span').addClass('act');
         timer1 = setInterval(scrollMarquee,scrollSpeed);
     });
