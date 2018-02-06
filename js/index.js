@@ -141,7 +141,7 @@ $(function () {
                 sayShow(say13,say13Show);
                 break;
         }
-        if(step <= -31050){
+        if(step <= -31060){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
