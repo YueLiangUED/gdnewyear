@@ -131,7 +131,6 @@ $(function () {
 
     },false);*/
     $('#clockBtn').on('touchstart',function (e) {
-        clearInterval(timer1);
         $(this).find('span').addClass('act');
         timer1 = setInterval(scrollMarquee,scrollSpeed);
     });
