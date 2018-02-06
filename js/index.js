@@ -14,9 +14,43 @@
     doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 $(function () {
-
-
-    
+    //文字进入效果
+    var say1 = document.getElementById('say1'),
+        say2 = document.getElementById('say2'),
+        say3 = document.getElementById('say3'),
+        say4 = document.getElementById('say4'),
+        say5 = document.getElementById('say5'),
+        say6 = document.getElementById('say6'),
+        say7 = document.getElementById('say7'),
+        say8 = document.getElementById('say8'),
+        say9 = document.getElementById('say9'),
+        say10 = document.getElementById('say10'),
+        say11 = document.getElementById('say11'),
+        say12 = document.getElementById('say12'),
+        say13 = document.getElementById('say13'),
+        say1Show = document.getElementById('say1Show'),
+        say2Show = document.getElementById('say2Show'),
+        say3Show = document.getElementById('say3Show'),
+        say4Show = document.getElementById('say4Show'),
+        say5Show = document.getElementById('say5Show'),
+        say6Show = document.getElementById('say6Show'),
+        say7Show = document.getElementById('say7Show'),
+        say8Show = document.getElementById('say8Show'),
+        say9Show = document.getElementById('say9Show'),
+        say10Show = document.getElementById('say10Show'),
+        say11Show = document.getElementById('say11Show'),
+        say12Show = document.getElementById('say12Show'),
+        say13Show = document.getElementById('say13Show');
+    function sayShow(txt1,txt2) {
+        var i = 0;
+        var timer_txt = setInterval(function(){
+            txt2.innerHTML = txt1.innerHTML.substring(0, i);
+            i++;
+            if(txt1.innerHTML == txt2.innerHTML){
+                clearInterval(timer_txt);
+            };
+        },60);
+    }
 
 
     var scrollSpeed=10,
@@ -27,6 +61,12 @@ $(function () {
             case -1000:
                 eleFadeIn($('#fadeIn_01'));
                 break;
+            case -1400:
+                sayShow(say1,say1Show);
+                break;
+            case -2240:
+                sayShow(say2,say2Show);
+                break;
             case -3800:
                 eleFadeIn($('#fadeIn_02'));
                 break;
@@ -35,6 +75,9 @@ $(function () {
                 eleFadeIn($('#fadeIn_04'),1500);
                 eleFadeIn($('#fadeIn_05'),2500);
                 break;
+            case -5600:
+                sayShow(say3,say3Show);
+                break;
             case -6770:
                 eleFadeIn($('#fadeIn_06'));
                 eleFadeIn($('#fadeIn_07'),2000);
@@ -42,6 +85,27 @@ $(function () {
             case -7650:
                 eleFadeIn($('#fadeIn_08'));
                 eleFadeIn($('#fadeIn_09'),2000);
+                break;
+            case -8400:
+                sayShow(say4,say4Show);
+                break;
+            case -9800:
+                sayShow(say5,say5Show);
+                break;
+            case -11200:
+                sayShow(say6,say6Show);
+                break;
+            case -11700:
+                sayShow(say7,say7Show);
+                break;
+            case -12340:
+                sayShow(say8,say8Show);
+                break;
+            case -14400:
+                sayShow(say9,say9Show);
+                break;
+            case -14420:
+                sayShow(say10,say10Show);
                 break;
             case -16330:
                 eleFadeIn($('#fadeIn_10'));
@@ -64,11 +128,20 @@ $(function () {
             case -26280:
                 eleFadeIn($('#fadeIn_16'));
                 break;
+            case -28400:
+                sayShow(say11,say11Show);
+                break;
             case -29000:
                 eleFadeIn($('#fadeIn_17'));
                 break;
+            case -29800:
+                sayShow(say12,say12Show);
+                break;
+            case -30700:
+                sayShow(say13,say13Show);
+                break;
         }
-        if(step <= -31040){
+        if(step <= -31050){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
