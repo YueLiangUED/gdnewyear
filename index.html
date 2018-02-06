@@ -91,11 +91,11 @@
             music.loop = true;
             music.volume = .5;
             music.id = 'music';
-            music.play();
             $('body').append(music);
             var percentT = percentage * 100;
             $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
+                music.play();
                 firFadeIn();
                 setTimeout(function () {
                     $('#loader').remove();
