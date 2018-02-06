@@ -2,10 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e7274c-edee-4f45-8503-d6a4421826f2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/back_1.png" afterPath="$PROJECT_DIR$/images/back_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/back_2.png" afterPath="$PROJECT_DIR$/images/back_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/back_3.png" afterPath="$PROJECT_DIR$/images/back_3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/back_4.png" afterPath="$PROJECT_DIR$/images/back_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_01.jpg" afterPath="$PROJECT_DIR$/images/bg_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_02.jpg" afterPath="$PROJECT_DIR$/images/bg_02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_03.jpg" afterPath="$PROJECT_DIR$/images/bg_03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_04.jpg" afterPath="$PROJECT_DIR$/images/bg_04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_05.jpg" afterPath="$PROJECT_DIR$/images/bg_05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_06.jpg" afterPath="$PROJECT_DIR$/images/bg_06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_07.jpg" afterPath="$PROJECT_DIR$/images/bg_07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_08.jpg" afterPath="$PROJECT_DIR$/images/bg_08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_09.jpg" afterPath="$PROJECT_DIR$/images/bg_09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_10.jpg" afterPath="$PROJECT_DIR$/images/bg_10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_11.jpg" afterPath="$PROJECT_DIR$/images/bg_11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_12.jpg" afterPath="$PROJECT_DIR$/images/bg_12.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_13.jpg" afterPath="$PROJECT_DIR$/images/bg_13.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_14.jpg" afterPath="$PROJECT_DIR$/images/bg_14.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_15.jpg" afterPath="$PROJECT_DIR$/images/bg_15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_16.jpg" afterPath="$PROJECT_DIR$/images/bg_16.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_17.jpg" afterPath="$PROJECT_DIR$/images/bg_17.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_18.jpg" afterPath="$PROJECT_DIR$/images/bg_18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_19.jpg" afterPath="$PROJECT_DIR$/images/bg_19.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_20.jpg" afterPath="$PROJECT_DIR$/images/bg_20.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_21.jpg" afterPath="$PROJECT_DIR$/images/bg_21.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_22.jpg" afterPath="$PROJECT_DIR$/images/bg_22.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_23.jpg" afterPath="$PROJECT_DIR$/images/bg_23.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_24.jpg" afterPath="$PROJECT_DIR$/images/bg_24.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_25.jpg" afterPath="$PROJECT_DIR$/images/bg_25.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_26.jpg" afterPath="$PROJECT_DIR$/images/bg_26.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/boy.png" afterPath="$PROJECT_DIR$/images/boy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/clock.png" afterPath="$PROJECT_DIR$/images/clock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/clock_1.png" afterPath="$PROJECT_DIR$/images/clock_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/clock_2.png" afterPath="$PROJECT_DIR$/images/clock_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_01.png" afterPath="$PROJECT_DIR$/images/fadeIn_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_02.png" afterPath="$PROJECT_DIR$/images/fadeIn_02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_03.png" afterPath="$PROJECT_DIR$/images/fadeIn_03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_04.png" afterPath="$PROJECT_DIR$/images/fadeIn_04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_05.png" afterPath="$PROJECT_DIR$/images/fadeIn_05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_06.png" afterPath="$PROJECT_DIR$/images/fadeIn_06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_07.png" afterPath="$PROJECT_DIR$/images/fadeIn_07.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_08.png" afterPath="$PROJECT_DIR$/images/fadeIn_08.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_09.png" afterPath="$PROJECT_DIR$/images/fadeIn_09.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_10.png" afterPath="$PROJECT_DIR$/images/fadeIn_10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_11.png" afterPath="$PROJECT_DIR$/images/fadeIn_11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_12.png" afterPath="$PROJECT_DIR$/images/fadeIn_12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_13.png" afterPath="$PROJECT_DIR$/images/fadeIn_13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_14.png" afterPath="$PROJECT_DIR$/images/fadeIn_14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_15.png" afterPath="$PROJECT_DIR$/images/fadeIn_15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_16.png" afterPath="$PROJECT_DIR$/images/fadeIn_16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_17.png" afterPath="$PROJECT_DIR$/images/fadeIn_17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/lastBtn.png" afterPath="$PROJECT_DIR$/images/lastBtn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/light.png" afterPath="$PROJECT_DIR$/images/light.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.less" afterPath="$PROJECT_DIR$/css/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="2.3newyear.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
+            <state relative-caret-position="165">
               <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
               <folding>
                 <element signature="e#560#2274#0" expanded="false" />
@@ -48,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -68,7 +119,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
+            <state relative-caret-position="2430">
               <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
               <folding>
                 <element signature="e#0#45#0" expanded="false" />
@@ -96,8 +147,8 @@
         <option value="$PROJECT_DIR$/js/preLoad.js" />
         <option value="$PROJECT_DIR$/js/imgLoader.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.less" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -282,12 +333,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517659511298</updated>
-      <workItem from="1517659513570" duration="55923000" />
+      <workItem from="1517659513570" duration="56727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55923000" />
+    <option name="totallyTimeSpent" value="56727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1237" height="777" extended-state="0" />
@@ -569,7 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
+        <state relative-caret-position="2430">
           <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
@@ -582,21 +633,21 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
+        <state relative-caret-position="165">
           <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
           <folding>
             <element signature="e#560#2274#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
