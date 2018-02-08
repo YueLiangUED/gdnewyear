@@ -14,11 +14,32 @@ html,body{
   }
 }
 
+@-webkit-keyframes musicMove {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes musicMove {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
 #loader{
   box-sizing: border-box;
   padding-top: 5rem;
   width: 7.5rem;
-  height: 12.06rem;
   background: -webkit-radial-gradient(#5483da,#4a7bd5,#3066b8);
   div{
     margin: 0 auto .3rem;
@@ -36,11 +57,29 @@ html,body{
     text-align: center;
   }
 }
+
+.music {
+  display: none;
+  position: fixed;
+  top: .2rem;
+  left: .2rem;
+  z-index: 10;
+  width: .6rem;
+  height: .6rem;
+  background: url("../audio/music.svg") no-repeat;
+  background-size: cover;
+  audio{
+    display: none;
+  }
+}
+.music.move{
+  -webkit-animation: musicMove 1s linear 0s infinite both;
+  animation: musicMove 1s linear 0s infinite both;
+}
 main{
   display: none;
   position: relative;
   width: 7.5rem;
-  height: 12.06rem;
   overflow: hidden;
   section:nth-child(1){
     position: absolute;
@@ -54,6 +93,9 @@ main{
       height: 13.34rem;
       span{
         position: absolute;
+        display: none;
+      }
+      p{
         display: none;
       }
     }
@@ -82,7 +124,22 @@ main{
         text-indent: -2em;
         color: #594940;
       }
-      p:nth-child(2){
+      p:nth-child(3){
+        display: block;
+      }
+      i{
+        position: absolute;
+        bottom: 1.73rem;
+        right: .94rem;
+        width: 1.82rem;
+        height: 1.71rem;
+        background: url("../images/yd.png") center no-repeat;
+        background-size: cover;
+        z-index: 150;
+      }
+    }
+    div:nth-child(1).none{
+      i{
         display: none;
       }
     }
@@ -100,44 +157,44 @@ main{
       }
       p{
         position: absolute;
-        bottom: 2.9rem;
-        left: 1.03rem;
-        font-size: .32rem;
-        text-align: center;
-        line-height: .32rem;
+        top: 8.7rem;
+        left: .85rem;
+        font-size: .36rem;
+        line-height: 1.5em;
+        text-align: left;
         color: #594940;
-      }
-      p:nth-child(2){
-        display: none;
       }
     }
     div:nth-child(3){
-      height: 12.06rem;
-      background: url("../images/bg_03.jpg") center no-repeat;
-      background-size: cover;
-      p{
-        position: absolute;
-        top: 2.36rem;
-        left: 3.2rem;
-        width: 3.9rem;
-        font-size: .32rem;
-        line-height: .6rem;
-        color: #594940;
-      }
-      p:nth-child(1){
-        display: none;
-      }
+      height: 0;
     }
     div:nth-child(4){
-      height: 12.06rem;
+      height: 24.12rem;
       background: url("../images/bg_04.jpg") center no-repeat;
       background-size: cover;
-      span{
-        top: 8.9rem;
+      span:nth-child(1){
+        top: 0;
+        left: 0;
+        width: 7.5rem;
+        height: 23.38rem;
+        background: url("../images/fadeIn_cbd.png") center no-repeat;
+        background-size: cover;
+      }
+      span:nth-child(2){
+        bottom: 2.7rem;
         left: 4.46rem;
         width: .58rem;
         height: .45rem;
         background: url("../images/fadeIn_02.png") center no-repeat;
+        background-size: cover;
+      }
+      i{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 7.5rem;
+        height: 8.42rem;
+        background: url("../images/people.png") center no-repeat;
         background-size: cover;
       }
     }
@@ -169,6 +226,22 @@ main{
         background: url("../images/fadeIn_05.png") center no-repeat;
         background-size: cover;
       }
+      span:nth-child(4){
+        bottom: .83rem;
+        left: 1.91rem;
+        width: 3.89rem;
+        height: 5.96rem;
+        background: url("../images/iphone.png") center no-repeat;
+        background-size: cover;
+      }
+      p{
+        position: absolute;
+        top: .96rem;
+        left: 1.36rem;
+        font-size: .36rem;
+        line-height: 1.5em;
+        color: #594940;
+      }
     }
     div:nth-child(6){
       height: 12.06rem;
@@ -176,14 +249,11 @@ main{
       background-size: cover;
       p{
         position: absolute;
-        top: 2.78rem;
-        left: 3.5rem;
-        font-size: .32rem;
-        line-height: .32rem;
+        top: 1.16rem;
+        left: 2.8rem;
+        font-size: .36rem;
+        line-height: .36rem;
         color: #594940;
-      }
-      p:nth-child(1){
-        display: none;
       }
     }
     div:nth-child(7){
@@ -231,12 +301,9 @@ main{
         position: absolute;
         bottom: 1.58rem;
         left: 2.12rem;
-        font-size: .32rem;
-        line-height: .32rem;
+        font-size: .36rem;
+        line-height: .36rem;
         color: #594940;
-      }
-      p:nth-child(3){
-        display: none;
       }
     }
     div:nth-child(9){
@@ -251,9 +318,6 @@ main{
         line-height: .36rem;
         color: #fefefe;
       }
-      p:nth-child(1){
-        display: none;
-      }
     }
     div:nth-child(10){
       background: url("../images/bg_10.jpg") center no-repeat;
@@ -266,53 +330,33 @@ main{
         line-height: .36rem;
         color: #fefefe;
       }
-      p:nth-child(1){
-        display: none;
-      }
     }
     div:nth-child(11){
+      height: 5.2rem;
       background: url("../images/bg_11.jpg") center no-repeat;
       background-size: cover;
       p{
         position: absolute;
-        font-size: .32rem;
-        line-height: .32rem;
+        top: 1.04rem;
+        right: .27rem;
+        font-size: .36rem;
+        line-height: .36rem;
         color: #ffffff;
-      }
-      p:nth-child(1),p:nth-child(2){
-        top: 2.5rem;
-        left: 3.74rem;
-      }
-      p:nth-child(3),p:nth-child(4){
-        bottom: 2.82rem;
-        left: 5.33rem;
-      }
-      p:nth-child(1),p:nth-child(3){
-        display: none;
       }
     }
     div:nth-child(12){
-      background: url("../images/bg_12.jpg") center no-repeat;
-      background-size: cover;
+      height: 0;
     }
     div:nth-child(13){
       background: url("../images/bg_13.jpg") center no-repeat;
       background-size: cover;
       p{
         position: absolute;
+        top: 2.9rem;
         left: 1.22rem;
-        font-size: .32rem;
-        line-height: .32rem;
+        font-size: .36rem;
+        line-height: 1.5em;
         color: #ffffff;
-      }
-      p:nth-child(1),p:nth-child(2){
-        top: 2.94rem;
-      }
-      p:nth-child(3),p:nth-child(4){
-        top: 3.42rem;
-      }
-      p:nth-child(1),p:nth-child(3){
-        display: none;
       }
     }
     div:nth-child(14){
@@ -320,11 +364,18 @@ main{
       background-size: cover;
       span{
         right: .18rem;
-        bottom: .53rem;
+        bottom: 1.93rem;
         width: 4.28rem;
         height: 1.4rem;
         background: url("../images/fadeIn_10.png") center no-repeat;
         background-size: cover;
+      }
+      p{
+        position: absolute;
+        bottom: 4.65rem;
+        right: 1.4rem;
+        font-size: .36rem;
+        color: #594940;
       }
     }
     div:nth-child(15){
@@ -381,6 +432,7 @@ main{
         height: 1.82rem;
         background: url("../images/fadeIn_14.png") center no-repeat;
         background-size: cover;
+        z-index: 10;
       }
       i{
         display: none;
@@ -435,10 +487,10 @@ main{
       background: url("../images/bg_22.jpg") center no-repeat;
       background-size: cover;
       span{
-        top: .22rem;
-        right: -.37rem;
-        width: 4.11rem;
-        height: 5.26rem;
+        top: 1.88rem;
+        right: .12rem;
+        width: 3.54rem;
+        height: 3.24rem;
         background: url("../images/fadeIn_16.png") center no-repeat;
         background-size: cover;
       }
@@ -448,24 +500,20 @@ main{
       background-size: cover;
       p{
         position: absolute;
-        left: 1.7rem;
-        bottom: 1rem;
-        width: 4.6rem;
-        font-size: .32rem;
+        left: 1.28rem;
+        top: .94rem;
+        font-size: .36rem;
         color: #594940;
-      }
-      p:nth-child(1){
-        display: none;
       }
     }
     div:nth-child(24){
       background: url("../images/bg_24.jpg") center no-repeat;
       background-size: cover;
       span{
-        top: .49rem;
-        left: .26rem;
-        width: 4.64rem;
-        height: 2.09rem;
+        top: .12rem;
+        left: 0;
+        width: 5.14rem;
+        height: 2.64rem;
         background: url("../images/fadeIn_17.png") center no-repeat;
         background-size: cover;
       }
@@ -473,12 +521,9 @@ main{
         position: absolute;
         left: 1.05rem;
         bottom: 1.5rem;
-        font-size: .32rem;
-        line-height: .32rem;
+        font-size: .36rem;
+        line-height: .36rem;
         color: #594940;
-      }
-      p:nth-child(2){
-        display: none;
       }
     }
     div:nth-child(25){
@@ -496,9 +541,6 @@ main{
         line-height: .8rem;
         writing-mode: vertical-rl;
         color: #594940;
-      }
-      p:nth-child(1){
-        display: none;
       }
     }
     div:nth-child(26){
@@ -526,6 +568,10 @@ main{
           background: url("../images/boy.png") center no-repeat;
           background-size: cover;
           z-index: 1;
+        }
+        i:nth-child(1).act{
+          background: url("../images/boy_1.png") center no-repeat;
+          background-size: cover;
         }
         i:nth-child(2){
           top: .22rem;
@@ -614,4 +660,12 @@ main{
       }
     }
   }
+}
+.mask{
+  position: absolute;
+  top: 0px;
+  background-color: #000;
+  z-index: 100;
+  left: 0px;
+  opacity: 0.5;
 }

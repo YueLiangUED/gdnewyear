@@ -13,6 +13,7 @@
     <script src="js/jweixin-1.0.0.js"></script>
     <script src="js/preLoader.js"></script>
     <script>
+
         preLoader([
             './audio/music.mp3',
             './images/clock.png',
@@ -21,7 +22,6 @@
             './images/light.png',
             './images/bg_01.jpg',
             './images/bg_02.jpg',
-            './images/bg_03.jpg',
             './images/bg_04.jpg',
             './images/bg_05.jpg',
             './images/bg_06.jpg',
@@ -30,7 +30,6 @@
             './images/bg_09.jpg',
             './images/bg_10.jpg',
             './images/bg_11.jpg',
-            './images/bg_12.jpg',
             './images/bg_13.jpg',
             './images/bg_14.jpg',
             './images/bg_15.jpg',
@@ -62,15 +61,17 @@
             './images/fadeIn_15.png',
             './images/fadeIn_16.png',
             './images/fadeIn_17.png',
+            './images/mom_1.png',
+            './images/mom_2.png',
+            './images/mom_3.png',
+            './images/mom_4.png',
+            './images/boy_1.png',
+            './images/fadeIn_cbd.png',
+            './images/iphone.png',
+            './images/people.png',
+            './images/yd.png'
         ],function (percentage) {
             //->MUSIC
-            var music = document.createElement("AUDIO");
-            music.src = './audio/music.mp3';
-            music.load();
-            music.loop = true;
-            music.volume = .5;
-            music.preload = 'none';
-            music.id = 'music';
             wx.config({
                 debug: false
             });
@@ -90,18 +91,18 @@
                     }, false);
                     document.addEventListener("touchstart",play, false);
                 }
-                audioAutoPlay('music');
+                audioAutoPlay('musicAudio');
             });
+
 
             var percentT = percentage * 100;
             $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
-                $('body').append(music);
-                music.play();
                 firFadeIn();
                 setTimeout(function () {
                     $('#loader').remove();
                     $('#main').show();
+                    showMask();
                 },1000);
                 setTimeout(firTxtShow,3000);
             }
@@ -121,6 +122,12 @@
                 };
             },60);
         }
+        //显示遮罩层
+        function showMask(){
+            $("#mask").css("height",$(document).height());
+            $("#mask").css("width",$(document).width());
+            $("#mask").show();
+        }
     </script>
 </head>
 <body>
@@ -133,33 +140,38 @@
     <p id="loader_info"></p>
 </section>
 <!--loading end-->
+<!--bgMusic-->
+<section class="music" id="musicMenu">
+    <audio src="audio/music.mp3" preload="none" loop id="music"></audio>
+</section>
+<!--bgMusic end-->
 <main id="main">
     <section id="conBox">
         <div>
             <span id="light"></span>
             <p id="page2Txt">我，是一名普通白领，<br>过着朝九（jia ban）晚五（ao ye）的生活。</p>
             <p id="page2TxtShow"></p>
+            <i id="yd"></i>
         </div>
         <div>
             <span id="fadeIn_01"></span>
-            <p id="say1">很多朋友说今年将会是我很特别的一年</p>
-            <p id="say1Show"></p>
+            <p id="say1">很多朋友说今年将会是我很特别的一年<br>但除了大年三十刚好生日，<br>没发现其他特别...</p>
         </div>
+        <div></div>
         <div>
-            <p id="say2">大年三十刚好是我的生日，此外还没发现其他特别。</p>
-            <p id="say2Show"></p>
-        </div>
-        <div>
+            <span id="fadeIn_cbd"></span>
             <span id="fadeIn_02"></span>
+            <i></i>
         </div>
         <div>
             <span id="fadeIn_03"></span>
             <span id="fadeIn_04"></span>
             <span id="fadeIn_05"></span>
+            <span id="fadeIn_iphone"></span>
+            <p id="say2">放假前一天，<br>下班走在赴约的路上，<br>人来人往依然很拥挤...</p>
         </div>
         <div>
             <p id="say3">我妈还是经常“轰炸”我...</p>
-            <p id="say3Show"></p>
         </div>
         <div>
             <span id="fadeIn_06"></span>
@@ -168,32 +180,24 @@
         <div>
             <span id="fadeIn_08"></span>
             <span id="fadeIn_09"></span>
-            <p id="say4">朋友还是一样经常聚会...</p>
-            <p id="say4Show"></p>
+            <p id="say4">兄弟们依旧无话不说</p>
         </div>
         <div>
             <p id="say5">回家的路上还是只有一个人...</p>
-            <p id="say5Show"></p>
         </div>
         <div>
-            <p id="say6">唉～到底特别在哪里呀...</p>
-            <p id="say6Show"></p>
+            <p id="say6">一切还是这样平平淡淡...</p>
         </div>
         <div>
-            <p id="say7">怎么又打电话给我...</p>
-            <p id="say7Show"></p>
-            <p id="say8">回拨中...</p>
-            <p id="say8Show"></p>
+            <p id="say7">咦！漏接了老妈的电话。</p>
         </div>
         <div></div>
         <div>
-            <p id="say9">怎么挂掉了？</p>
-            <p id="say9Show"></p>
-            <p id="say10">算了，明天就回去了，不管了...</p>
-            <p id="say10Show"></p>
+            <p id="say8">算了，这么晚先不回电了<br>反正明天就回去...</p>
         </div>
         <div>
             <span id="fadeIn_10"></span>
+            <p id="say9">踏上回家路，广州年后再见~</p>
         </div>
         <div></div>
         <div></div>
@@ -220,17 +224,14 @@
             <span id="fadeIn_16"></span>
         </div>
         <div>
-            <p id="say11">外面再好，也没有爸妈对我好。昨天不该对妈妈的电话不耐烦...</p>
-            <p id="say11Show"></p>
+            <p id="say10">外面再好，也没有爸妈对我好<br>我一直寻找的特别，<br>原来一直默默地守护在我身边。</p>
         </div>
         <div>
             <span id="fadeIn_17"></span>
-            <p id="say12">我不想错过当下你们每个年轻的时刻。</p>
-            <p id="say12Show"></p>
+            <p id="say11">我不想错过当下你们每个年轻的时刻。</p>
         </div>
         <div>
-            <p id="say13">亲情陪伴 最特别，流量年包 最体贴。</p>
-            <p id="say13Show"></p>
+            <p id="say12">亲情陪伴 最特别，流量年包 最体贴。</p>
         </div>
         <div>
             <span>
@@ -251,6 +252,8 @@
         </div>
     </section>
 </main>
+<!--遮罩-->
+<section id="mask" class="mask"></section>
 </body>
 </html>
 <script src="js/index.js"></script>

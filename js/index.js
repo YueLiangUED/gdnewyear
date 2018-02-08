@@ -14,20 +14,10 @@
     doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 $(function () {
-    //文字进入效果
-    function sayShow(txt1,txt2) {
-        var i = 0,
-            txt2 = document.getElementById(txt2),
-            txt1 = document.getElementById(txt1);
-        var timer_txt = setInterval(function(){
-            txt2.innerHTML = txt1.innerHTML.substring(0, i);
-            i++;
-            if(txt1.innerHTML == txt2.innerHTML){
-                clearInterval(timer_txt);
-            };
-        },60);
-    }
-    var scrollSpeed=10,
+    $('#loader').css('height',$(document).height());
+    $('#main').css('height',$(document).height());
+
+    var scrollSpeed=0,
         step = 0;
     function scrollMarquee() {
         step -= 2;
@@ -35,104 +25,106 @@ $(function () {
             case -1000:
                 eleFadeIn($('#fadeIn_01'));
                 break;
-            case -1400:
-                sayShow('say1','say1Show');
+            case -1206:
+                eleFadeIn($('#say1'));
                 break;
-            case -2240:
-                sayShow('say2','say2Show');
+            case -2412:
+                eleFadeIn($('#fadeIn_cbd'));
                 break;
-            case -3800:
+            case -3618:
                 eleFadeIn($('#fadeIn_02'));
                 break;
-            case -4850:
+            case -3800:
+                eleFadeIn($('#say2'));
+                break;
+            case -4824:
                 eleFadeIn($('#fadeIn_03'));
                 eleFadeIn($('#fadeIn_04'),1500);
                 eleFadeIn($('#fadeIn_05'),2500);
+                window.setTimeout(function () {
+                    eleFadeIn($('#fadeIn_iphone'),1000);
+                    eleFadeIn($('#say3'));
+                },1500);
                 break;
-            case -5600:
-                sayShow('say3','say3Show');
-                break;
-            case -6770:
+            case -6700:
                 eleFadeIn($('#fadeIn_06'));
                 eleFadeIn($('#fadeIn_07'),2000);
                 break;
-            case -7650:
+            case -7850:
                 eleFadeIn($('#fadeIn_08'));
                 eleFadeIn($('#fadeIn_09'),2000);
                 break;
-            case -8400:
-                sayShow('say4','say4Show');
+            case -8090:
+                eleFadeIn($('#say4'));
                 break;
-            case -9800:
-                sayShow('say5','say5Show');
+            case -9400:
+                eleFadeIn($('#say5'));
                 break;
-            case -11200:
-                sayShow('say6','say6Show');
+            case -10800:
+                eleFadeIn($('#say6'));
                 break;
-            case -11700:
-                sayShow('say7','say7Show');
+            case -11374:
+                eleFadeIn($('#say7'));
                 break;
-            case -12340:
-                sayShow('say8','say8Show');
+            case -12400:
+                eleFadeIn($('#say8'));
                 break;
-            case -14400:
-                sayShow('say9','say9Show');
-                break;
-            case -14430:
-                sayShow('say10','say10Show');
-                break;
-            case -16330:
+            case -13786:
+                eleFadeIn($('#say9'));
                 eleFadeIn($('#fadeIn_10'));
                 break;
-            case -19800:
+            case -13986:
+                eleFadeIn($('#fadeIn_10'));
+                break;
+            case -17720:
                 eleFadeIn($('#fadeIn_11'));
                 break;
-            case -20900:
+            case -19060:
                 eleFadeIn($('#fadeIn_12'));
                 break;
-            case -22500:
+            case -20310:
                 eleFadeIn($('#fadeIn_13'));
                 break;
-            case -23650:
+            case -21500:
                 eleFadeIn($('#fadeIn_14'));
                 break;
-            case -23750:
+            case -21700:
                 eleFadeIn($('#m1'));
                 break;
-            case -23850:
+            case -21850:
                 eleFadeIn($('#m2'));
                 break;
-            case -23950:
+            case -22000:
                 eleFadeIn($('#m3'));
                 break;
-            case -24050:
+            case -22150:
                 eleFadeIn($('#m4'));
                 break;
-            case -25000:
+            case -22940:
                 eleFadeIn($('#fadeIn_15'));
                 break;
-            case -26280:
+            case -24390:
                 eleFadeIn($('#fadeIn_16'));
                 break;
-            case -28400:
-                sayShow('say11','say11Show');
+            case -25650:
+                eleFadeIn($('#say10'));
                 break;
-            case -29000:
+            case -26900:
                 eleFadeIn($('#fadeIn_17'));
                 break;
-            case -29500:
-                sayShow('say12','say12Show');
+            case -27390:
+                eleFadeIn($('#say11'));
                 break;
-            case -30700:
-                sayShow('say13','say13Show');
+            case -28200:
+                eleFadeIn($('#say12'),2000);
                 break;
         }
-        if(step <= -31080){
+        if(step <= -28840){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
         }
-        //console.log(step);
+        console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
 
@@ -155,7 +147,7 @@ $(function () {
     //聊天气泡淡入
     function eleFadeIn(ele,t) {
         if(t === null){
-            t = 500;
+            t = 1000;
         }
         ele.fadeIn(t);
     }
@@ -214,6 +206,50 @@ $(function () {
     jumpBtn.addEventListener('touchend',function (e) {
         jumpBtn.style.left = .23 + 'rem';
     });
-    
-    
+
+    var timer4 = setInterval(function () {
+        $('#jumpBtn').addClass('act');
+        window.setTimeout(function () {
+            $('#jumpBtn').removeClass('act');
+        },500);
+    },1000);
+
+    //bgMusic
+    ~function () {
+        var musicMenu = document.getElementById('musicMenu'),
+            musicAudio = document.getElementById('music');
+
+        musicMenu.addEventListener('click', function () {
+            if (musicAudio.paused) {//->暂停
+                musicAudio.play();
+                musicMenu.className = 'music move';
+                return;
+            }
+            musicAudio.pause();
+            musicMenu.className = 'music';
+        }, false);
+
+        function controlMusic() {
+            musicAudio.volume = 0.5;
+            musicAudio.play();
+            musicAudio.addEventListener('canplay', function () {
+                musicMenu.style.display = 'block';
+                musicMenu.className = 'music move';
+            }, false);
+        }
+        window.setTimeout(controlMusic, 1000);
+    }();
+
+    $('#yd').on('click',function () {
+        hideMask();
+        $('#conBox>div:nth-child(1)').addClass('none');
+    });
+    $('#mask').on('click',function () {
+        hideMask();
+        $('#conBox>div:nth-child(1)').addClass('none');
+    });
+    //隐藏遮罩层  
+    function hideMask(){
+        $("#mask").hide();
+    }
 });
