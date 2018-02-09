@@ -76,6 +76,16 @@
             './images/people.png',
             './images/yd.png'
         ],function (percentage) {
+            var ms1 = document.getElementById('ms1'),
+                ms2 = document.getElementById('ms2'),
+                ms3 = document.getElementById('ms3'),
+                ms4 = document.getElementById('ms4'),
+                ms5 = document.getElementById('ms5');
+            ms1.volume = 0;
+            ms2.volume = 0;
+            ms3.volume = 0;
+            ms4.volume = 0;
+            ms5.volume = 0;
             var percentT = percentage * 100;
             $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
