@@ -241,6 +241,37 @@ $(function () {
     },1000);
 
     //bgMusic
+    wx.config({
+        debug: false
+    });
+    wx.ready(function () {
+        function audioAutoPlay(id){
+            var audio = document.getElementById(id),
+                play = function(){
+                    audio.play();
+                    document.removeEventListener("touchstart",play, false);
+                };
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                play();
+            }, false);
+            document.addEventListener('YixinJSBridgeReady', function() {
+                play();
+            }, false);
+            document.addEventListener("touchstart",play, false);
+        }
+        audioAutoPlay('music');
+        ms1.volume = 0;
+        ms2.volume = 0;
+        ms3.volume = 0;
+        ms4.volume = 0;
+        ms5.volume = 0;
+        audioAutoPlay('ms1');
+        audioAutoPlay('ms2');
+        audioAutoPlay('ms3');
+        audioAutoPlay('ms4');
+        audioAutoPlay('ms5');
+    });
     ~function () {
         var musicMenu = document.getElementById('musicMenu'),
             musicAudio = document.getElementById('music');
