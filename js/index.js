@@ -29,7 +29,7 @@ $(function () {
     ms3.load();
     ms4.load();
     ms5.load();
-    var scrollSpeed= 12,
+    var scrollSpeed= 10,
         step = 0;
     function scrollMarquee() {
         step -= 2;
@@ -235,7 +235,7 @@ $(function () {
             oLeft = (document.documentElement.clientWidth - jumpBtn.offsetWidth);
         }else if(oLeft >= 5.8){
             oLeft = 5.8;
-        }else if(oLeft >= 5.5){
+        }else if(oLeft >= 5.8){
             window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
         }
         jumpBtn.style.left = oLeft + "rem";
