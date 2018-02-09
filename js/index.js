@@ -17,7 +17,7 @@ $(function () {
     $('#loader').css('height',$(document).height());
     $('#main').css('height',$(document).height());
 
-    var scrollSpeed=8,
+    var scrollSpeed=0,
         step = 0;
     function scrollMarquee() {
         step -= 2;
@@ -41,10 +41,10 @@ $(function () {
                 eleFadeIn($('#fadeIn_03'));
                 eleFadeIn($('#fadeIn_04'),1500);
                 eleFadeIn($('#fadeIn_05'),2500);
+                eleFadeIn($('#say3'));
                 window.setTimeout(function () {
                     eleFadeIn($('#fadeIn_iphone'),1000);
-                    eleFadeIn($('#say3'));
-                },1500);
+                },2500);
                 break;
             case -6700:
                 eleFadeIn($('#fadeIn_06'));
@@ -66,7 +66,7 @@ $(function () {
             case -11374:
                 eleFadeIn($('#say7'));
                 break;
-            case -12400:
+            case -12300:
                 eleFadeIn($('#say8'));
                 break;
             case -13786:
@@ -79,37 +79,37 @@ $(function () {
             case -17720:
                 eleFadeIn($('#fadeIn_11'));
                 break;
-            case -19060:
+            case -19000:
                 eleFadeIn($('#fadeIn_12'));
                 break;
             case -20310:
                 eleFadeIn($('#fadeIn_13'));
                 break;
-            case -21500:
+            case -21000:
                 eleFadeIn($('#fadeIn_14'));
                 break;
-            case -21700:
+            case -21200:
                 eleFadeIn($('#m1'));
                 break;
-            case -21850:
+            case -21350:
                 eleFadeIn($('#m2'));
                 break;
-            case -22000:
+            case -21500:
                 eleFadeIn($('#m3'));
                 break;
-            case -22150:
+            case -21650:
                 eleFadeIn($('#m4'));
                 break;
-            case -22940:
+            case -22800:
                 eleFadeIn($('#fadeIn_15'));
                 break;
-            case -24390:
+            case -24200:
                 eleFadeIn($('#fadeIn_16'));
                 break;
-            case -25650:
+            case -25500:
                 eleFadeIn($('#say10'));
                 break;
-            case -26900:
+            case -26700:
                 eleFadeIn($('#fadeIn_17'));
                 break;
             case -27390:
@@ -119,7 +119,7 @@ $(function () {
                 eleFadeIn($('#say12'),2000);
                 break;
         }
-        if(step <= -29000){
+        if(step <= -28900){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
