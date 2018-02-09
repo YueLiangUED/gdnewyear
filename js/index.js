@@ -17,7 +17,7 @@ $(function () {
     $('#loader').css('height',$(document).height());
     $('#main').css('height',$(document).height());
 
-    var scrollSpeed=0,
+    var scrollSpeed=8,
         step = 0;
     function scrollMarquee() {
         step -= 2;
@@ -29,7 +29,7 @@ $(function () {
                 eleFadeIn($('#say1'));
                 break;
             case -2412:
-                eleFadeIn($('#fadeIn_cbd'));
+                eleFadeIn($('#fadeIn_cbd'),2000);
                 break;
             case -3618:
                 eleFadeIn($('#fadeIn_02'));
