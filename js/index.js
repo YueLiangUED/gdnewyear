@@ -221,6 +221,7 @@ $(function () {
     var jumpBtn = document.getElementById('jumpBtn'),
         ww;
     jumpBtn.addEventListener('touchstart',function (e) {
+        $arrowBox.hide();
         var touches = e.touches[0];
         ww = touches.clientX - jumpBtn.offsetLeft;
     });
@@ -234,12 +235,13 @@ $(function () {
             oLeft = (document.documentElement.clientWidth - jumpBtn.offsetWidth);
         }else if(oLeft >= 5.8){
             oLeft = 5.8;
-        }else if(oLeft >= 5){
+        }else if(oLeft >= 5.5){
             window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
         }
         jumpBtn.style.left = oLeft + "rem";
     });
     jumpBtn.addEventListener('touchend',function (e) {
+        $arrowBox.show();
         jumpBtn.style.left = .23 + 'rem';
     });
 
@@ -309,10 +311,14 @@ $(function () {
     $('#yd').on('click',function () {
         hideMask();
         $('#conBox>div:nth-child(1)').addClass('none');
+        firFadeIn();
+        setTimeout(firTxtShow,2000);
     });
     $('#mask').on('click',function () {
         hideMask();
         $('#conBox>div:nth-child(1)').addClass('none');
+        firFadeIn();
+        setTimeout(firTxtShow,2000);
     });
     //隐藏遮罩层  
     function hideMask(){
