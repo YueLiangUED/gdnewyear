@@ -90,11 +90,6 @@
             $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
                 firFadeIn();
-                ms1.volume = 0;
-                ms2.volume = 0;
-                ms3.volume = 0;
-                ms4.volume = 0;
-                ms5.volume = 0;
                 setTimeout(function () {
                     $('#loader').remove();
                     $('#main').show();

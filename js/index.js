@@ -253,6 +253,7 @@ $(function () {
         function audioAutoPlay(id){
             var audio = document.getElementById(id),
                 play = function(){
+                    audio.volume = 0;
                     audio.play();
                     document.removeEventListener("touchstart",play, false);
                 };
@@ -263,19 +264,19 @@ $(function () {
             document.addEventListener('YixinJSBridgeReady', function() {
                 play();
             }, false);
-            //document.addEventListener("touchstart",play, false);
+            document.addEventListener("touchstart",play, false);
         }
         audioAutoPlay('music');
-        ms1.volume = 0;
-        ms2.volume = 0;
-        ms3.volume = 0;
-        ms4.volume = 0;
-        ms5.volume = 0;
         audioAutoPlay('ms1');
         audioAutoPlay('ms2');
         audioAutoPlay('ms3');
         audioAutoPlay('ms4');
         audioAutoPlay('ms5');
+        ms1.volume = 0;
+        ms2.volume = 0;
+        ms3.volume = 0;
+        ms4.volume = 0;
+        ms5.volume = 0;
     });
     ~function () {
         var musicMenu = document.getElementById('musicMenu'),
