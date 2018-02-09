@@ -235,7 +235,7 @@ $(function () {
             oLeft = (document.documentElement.clientWidth - jumpBtn.offsetWidth);
         }else if(oLeft >= 5.8){
             oLeft = 5.8;
-        }else if(oLeft >= 5.8){
+        }else if(oLeft >= 5.7){
             window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
         }
         jumpBtn.style.left = oLeft + "rem";
