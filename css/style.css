@@ -129,6 +129,7 @@ main section:nth-child(1) div:nth-child(1) p {
   color: #594940;
 }
 main section:nth-child(1) div:nth-child(1) p:nth-child(3) {
+  font-family: "Microsoft YaHei";
   display: block;
 }
 main section:nth-child(1) div:nth-child(1) i {

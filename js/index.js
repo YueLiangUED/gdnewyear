@@ -262,13 +262,14 @@ $(function () {
             audio.pause();
             document.addEventListener("WeixinJSBridgeReady", function () {
                 play();
+                music.play();
             }, false);
             document.addEventListener('YixinJSBridgeReady', function() {
                 play();
+                music.play();
             }, false);
             document.addEventListener("touchstart",play, false);
         }
-        audioAutoPlay('music');
         music.play();
         audioAutoPlay('ms1');
         audioAutoPlay('ms2');
