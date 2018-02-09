@@ -17,12 +17,18 @@ $(function () {
     $('#loader').css('height',$(document).height());
     $('#main').css('height',$(document).height());
 
-    var ms1 = document.getElementById('ms1'),
+    var music = document.getElementById('music'),
+        ms1 = document.getElementById('ms1'),
         ms2 = document.getElementById('ms2'),
         ms3 = document.getElementById('ms3'),
         ms4 = document.getElementById('ms4'),
         ms5 = document.getElementById('ms5');
-
+    music.load();
+    ms1.load();
+    ms2.load();
+    ms3.load();
+    ms4.load();
+    ms5.load();
     var scrollSpeed=8,
         step = 0;
     function scrollMarquee() {
@@ -263,6 +269,7 @@ $(function () {
             document.addEventListener("touchstart",play, false);
         }
         audioAutoPlay('music');
+        music.play();
         audioAutoPlay('ms1');
         audioAutoPlay('ms2');
         audioAutoPlay('ms3');
