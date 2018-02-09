@@ -45,6 +45,10 @@ $(function () {
                 break;
             case -3618:
                 eleFadeIn($('#fadeIn_02'));
+                ms1.play();
+                window.setTimeout(function () {
+                    ms1.pause();
+                },1000);
                 break;
             case -3800:
                 eleFadeIn($('#say2'));
@@ -80,7 +84,7 @@ $(function () {
                 eleFadeIn($('#fadeIn_08'));
                 eleFadeIn($('#fadeIn_09'),2000);
                 break;
-            case -8090:
+            case -8050:
                 eleFadeIn($('#say4'));
                 break;
             case -9400:
@@ -156,7 +160,7 @@ $(function () {
             $('#clockBtn').remove();
             return;
         }
-        console.log(step);
+        //console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
 
