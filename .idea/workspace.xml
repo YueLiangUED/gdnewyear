@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e7274c-edee-4f45-8503-d6a4421826f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/music.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg_03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg_12.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_04.jpg" afterPath="$PROJECT_DIR$/images/bg_04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_11.jpg" afterPath="$PROJECT_DIR$/images/bg_11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_13.jpg" afterPath="$PROJECT_DIR$/images/bg_13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_14.jpg" afterPath="$PROJECT_DIR$/images/bg_14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bg_23.jpg" afterPath="$PROJECT_DIR$/images/bg_23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_12.png" afterPath="$PROJECT_DIR$/images/fadeIn_12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_16.png" afterPath="$PROJECT_DIR$/images/fadeIn_16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fadeIn_17.png" afterPath="$PROJECT_DIR$/images/fadeIn_17.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.less" afterPath="$PROJECT_DIR$/css/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="2.3newyear.iws" />
@@ -38,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="83">
+              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -58,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="430">
@@ -105,8 +90,8 @@
         <option value="$PROJECT_DIR$/js/imgLoader.js" />
         <option value="$PROJECT_DIR$/../newYear/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/css/style.less" />
+        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
@@ -287,12 +272,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517659511298</updated>
       <workItem from="1517659513570" duration="65885000" />
-      <workItem from="1518053407712" duration="16505000" />
+      <workItem from="1518053407712" duration="16856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82390000" />
+    <option name="totallyTimeSpent" value="82741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1237" height="777" extended-state="6" />
@@ -612,6 +597,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -619,14 +612,6 @@
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

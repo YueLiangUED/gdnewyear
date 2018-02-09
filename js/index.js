@@ -119,12 +119,12 @@ $(function () {
                 eleFadeIn($('#say12'),2000);
                 break;
         }
-        if(step <= -28840){
+        if(step <= -29000){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
         }
-        console.log(step);
+        //console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
 
