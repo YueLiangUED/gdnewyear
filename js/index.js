@@ -164,18 +164,7 @@ $(function () {
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
 
-    $('#clockBtn').on('touchstart',function (e) {
-        if(e.originalEvent.targetTouches.length ==1){
-            $(this).find('span').addClass('act');
-            timer1 = setInterval(scrollMarquee,scrollSpeed);
-        }else{
-            return;
-        }
-    });
-    $('#clockBtn').on('touchend',function (e) {
-        $(this).find('span').removeClass('act');
-        clearInterval(timer1);
-    });
+
     $('#clockBtn').on('contextmenu', function(e){
         e.preventDefault();
     });
@@ -313,13 +302,53 @@ $(function () {
         $('#conBox>div:nth-child(1)').addClass('none');
         firFadeIn();
         setTimeout(firTxtShow,2000);
+        window.setTimeout(function () {
+            /*$('#clockBtn').on('touchstart',function (e) {
+                if(e.originalEvent.targetTouches.length ==1){
+                    $(this).find('span').addClass('act');
+                    timer1 = setInterval(scrollMarquee,scrollSpeed);
+                }else{
+                    return;
+                }
+            });
+            $('#clockBtn').on('touchend',function (e) {
+                $(this).find('span').removeClass('act');
+                clearInterval(timer1);
+            });*/
+        },4000);
     });
     $('#mask').on('click',function () {
         hideMask();
         $('#conBox>div:nth-child(1)').addClass('none');
         firFadeIn();
         setTimeout(firTxtShow,2000);
+        window.setTimeout(function () {
+
+        },4000);
     });
+
+    var page2TxtShow = document.getElementById('page2TxtShow'),
+        page2Txt = document.getElementById('page2Txt');
+
+    $('#clockBtn').on('touchstart',function (e) {
+        e.preventDefault();
+        if(page2Txt.innerHTML == page2TxtShow.innerHTML){
+            if(e.originalEvent.targetTouches.length ==1){
+                $(this).find('span').addClass('act');
+                timer1 = setInterval(scrollMarquee,scrollSpeed);
+            }else{
+                return;
+            }
+        }
+
+    });
+    $('#clockBtn').on('touchend',function (e) {
+        if(page2Txt.innerHTML == page2TxtShow.innerHTML && typeof (timer1) !== 'undefined'){
+            $(this).find('span').removeClass('act');
+            clearInterval(timer1);
+        }
+    });
+
     //隐藏遮罩层  
     function hideMask(){
         $("#mask").hide();
