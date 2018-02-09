@@ -256,7 +256,6 @@ $(function () {
                     audio.play();
                     document.removeEventListener("touchstart",play, false);
                 };
-            audio.volume = 0;
             audio.play();
             document.addEventListener("WeixinJSBridgeReady", function () {
                 play();
@@ -267,6 +266,11 @@ $(function () {
             //document.addEventListener("touchstart",play, false);
         }
         audioAutoPlay('music');
+        ms1.volume = 0;
+        ms2.volume = 0;
+        ms3.volume = 0;
+        ms4.volume = 0;
+        ms5.volume = 0;
         audioAutoPlay('ms1');
         audioAutoPlay('ms2');
         audioAutoPlay('ms3');
