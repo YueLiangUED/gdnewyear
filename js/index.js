@@ -17,7 +17,13 @@ $(function () {
     $('#loader').css('height',$(document).height());
     $('#main').css('height',$(document).height());
 
-    var scrollSpeed=0,
+    var ms1 = document.getElementById('ms1'),
+        ms2 = document.getElementById('ms2'),
+        ms3 = document.getElementById('ms3'),
+        ms4 = document.getElementById('ms4'),
+        ms5 = document.getElementById('ms5');
+
+    var scrollSpeed=8,
         step = 0;
     function scrollMarquee() {
         step -= 2;
@@ -39,14 +45,22 @@ $(function () {
                 break;
             case -4824:
                 eleFadeIn($('#fadeIn_03'));
+                ms1.play();
                 eleFadeIn($('#fadeIn_04'),1500);
                 eleFadeIn($('#fadeIn_05'),2500);
                 eleFadeIn($('#say3'));
                 window.setTimeout(function () {
                     eleFadeIn($('#fadeIn_iphone'),1000);
+                    window.setTimeout(function () {
+                        ms2.play();
+                    },800);
                 },2500);
+                window.setTimeout(function () {
+                    ms1.pause();
+                },3000);
                 break;
             case -6700:
+                ms3.play();
                 eleFadeIn($('#fadeIn_06'));
                 eleFadeIn($('#fadeIn_07'),2000);
                 break;
@@ -59,6 +73,9 @@ $(function () {
                 break;
             case -9400:
                 eleFadeIn($('#say5'));
+                break;
+            case -10200:
+                ms4.play();
                 break;
             case -10800:
                 eleFadeIn($('#say6'));
@@ -75,6 +92,9 @@ $(function () {
                 break;
             case -13986:
                 eleFadeIn($('#fadeIn_10'));
+                break;
+            case -15900:
+                ms5.play();
                 break;
             case -17720:
                 eleFadeIn($('#fadeIn_11'));
@@ -119,12 +139,12 @@ $(function () {
                 eleFadeIn($('#say12'),2000);
                 break;
         }
-        if(step <= -28900){
+        if(step <= -28980){
             $('#clockBtn').off();
             $('#clockBtn').remove();
             return;
         }
-        //console.log(step);
+        console.log(step);
         $('#conBox').css('transform','translateY('+step/100+'rem)');
     }
 
