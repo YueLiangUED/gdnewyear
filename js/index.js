@@ -302,29 +302,12 @@ $(function () {
         $('#conBox>div:nth-child(1)').addClass('none');
         firFadeIn();
         setTimeout(firTxtShow,2000);
-        window.setTimeout(function () {
-            /*$('#clockBtn').on('touchstart',function (e) {
-                if(e.originalEvent.targetTouches.length ==1){
-                    $(this).find('span').addClass('act');
-                    timer1 = setInterval(scrollMarquee,scrollSpeed);
-                }else{
-                    return;
-                }
-            });
-            $('#clockBtn').on('touchend',function (e) {
-                $(this).find('span').removeClass('act');
-                clearInterval(timer1);
-            });*/
-        },4000);
     });
     $('#mask').on('click',function () {
         hideMask();
         $('#conBox>div:nth-child(1)').addClass('none');
         firFadeIn();
         setTimeout(firTxtShow,2000);
-        window.setTimeout(function () {
-
-        },4000);
     });
 
     var page2TxtShow = document.getElementById('page2TxtShow'),
