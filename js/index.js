@@ -253,10 +253,11 @@ $(function () {
         function audioAutoPlay(id){
             var audio = document.getElementById(id),
                 play = function(){
-                    audio.pause();
+                    audio.play();
                     document.removeEventListener("touchstart",play, false);
                 };
-            audio.pause();
+            audio.play();
+            audio.volume = 0;
             document.addEventListener("WeixinJSBridgeReady", function () {
                 play();
             }, false);
