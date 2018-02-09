@@ -81,15 +81,20 @@
                 ms3 = document.getElementById('ms3'),
                 ms4 = document.getElementById('ms4'),
                 ms5 = document.getElementById('ms5');
-            ms1.volume = 0;
-            ms2.volume = 0;
-            ms3.volume = 0;
-            ms4.volume = 0;
-            ms5.volume = 0;
+            ms1.load();
+            ms2.load();
+            ms3.load();
+            ms4.load();
+            ms5.load();
             var percentT = percentage * 100;
             $('#loader_info').html((parseInt(percentT)) + '%');
             if (percentage === 1) {
                 firFadeIn();
+                ms1.volume = 0;
+                ms2.volume = 0;
+                ms3.volume = 0;
+                ms4.volume = 0;
+                ms5.volume = 0;
                 setTimeout(function () {
                     $('#loader').remove();
                     $('#main').show();
