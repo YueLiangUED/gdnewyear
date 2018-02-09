@@ -73,7 +73,7 @@ $(function () {
                 },3500);
                 window.setTimeout(function () {
                     ms1.pause();
-                },3500);
+                },3800);
                 break;
             case -6700:
                 ms3.play();
