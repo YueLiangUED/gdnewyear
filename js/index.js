@@ -199,7 +199,7 @@ $(function () {
         }else if(oLeft >= 5.8){
             oLeft = 5.8;
         }else if(oLeft >= 5){
-            window.location.href = '';
+            window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
         }
         jumpBtn.style.left = oLeft + "rem";
     });

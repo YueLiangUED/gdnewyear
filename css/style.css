@@ -1,6 +1,10 @@
+@font-face {
+  font-family: 'fzzy';
+  src: url('../font/FONT.TTF');
+}
 html,
 body {
-  font-family: "Microsoft YaHei";
+  font-family: "fzzy";
   -webkit-user-select: none;
   user-select: none;
 }
