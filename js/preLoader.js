@@ -15,7 +15,7 @@
         imgList = isArray(imgList) && imgList || [];
         callback = typeof(callback) === 'function' && callback;
 
-        var total = imgList.length,
+        var total = imgList.length + 6,
             loaded = 0,
             imgages = [],
             _on = function () {
