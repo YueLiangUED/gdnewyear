@@ -43,18 +43,24 @@ $(function () {
             case -3800:
                 eleFadeIn($('#say2'));
                 break;
-            case -4824:
+            case -4800:
                 eleFadeIn($('#fadeIn_03'));
                 ms1.play();
-                eleFadeIn($('#fadeIn_04'),1500);
-                eleFadeIn($('#fadeIn_05'),2500);
+                window.setTimeout(function () {
+                    eleFadeIn($('#fadeIn_04'));
+                    ms1.play();
+                },1000);
+                window.setTimeout(function () {
+                    eleFadeIn($('#fadeIn_05'));
+                    ms1.play();
+                },2000);
                 eleFadeIn($('#say3'));
                 window.setTimeout(function () {
                     eleFadeIn($('#fadeIn_iphone'),1000);
                     window.setTimeout(function () {
                         ms2.play();
                     },800);
-                },2500);
+                },3000);
                 window.setTimeout(function () {
                     ms1.pause();
                 },3000);
@@ -211,7 +217,7 @@ $(function () {
     jumpBtn.addEventListener('touchmove',function (e) {
         var touches = e.touches[0];
         var oLeft = (touches.clientX - ww)/50;
-        console.log(oLeft);
+        //console.log(oLeft);
         if(oLeft <= .23) {
             oLeft = .23;
         }else if(oLeft > document.documentElement.clientWidth - jumpBtn.offsetWidth) {
