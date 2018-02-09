@@ -29,7 +29,7 @@ $(function () {
     ms3.load();
     ms4.load();
     ms5.load();
-    var scrollSpeed=8,
+    var scrollSpeed= 12,
         step = 0;
     function scrollMarquee() {
         step -= 2;
