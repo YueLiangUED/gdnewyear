@@ -332,7 +332,15 @@ $(function () {
 
     $('#clockBtn').on('touchstart',function (e) {
         e.preventDefault();
-        if(page2Txt.innerHTML == page2TxtShow.innerHTML){
+        if(page2Txt.innerHTML == page2TxtShow.innerHTML && typeof (timer1) === 'undefined'){
+            if(e.originalEvent.targetTouches.length ==1){
+                $(this).find('span').addClass('act');
+                timer1 = setInterval(scrollMarquee,scrollSpeed);
+            }else{
+                return;
+            }
+        }else if(page2Txt.innerHTML == page2TxtShow.innerHTML && typeof (timer1) !== 'undefined'){
+            clearInterval(timer1);
             if(e.originalEvent.targetTouches.length ==1){
                 $(this).find('span').addClass('act');
                 timer1 = setInterval(scrollMarquee,scrollSpeed);
