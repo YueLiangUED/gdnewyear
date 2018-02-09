@@ -45,7 +45,6 @@ $(function () {
                 break;
             case -4800:
                 eleFadeIn($('#fadeIn_03'));
-                ms1.volume = 1;
                 ms1.play();
                 window.setTimeout(function () {
                     eleFadeIn($('#fadeIn_04'));
@@ -59,16 +58,14 @@ $(function () {
                 window.setTimeout(function () {
                     eleFadeIn($('#fadeIn_iphone'),1000);
                     window.setTimeout(function () {
-                        ms2.volume = 1;
                         ms2.play();
                     },800);
-                },3000);
+                },3500);
                 window.setTimeout(function () {
                     ms1.pause();
-                },3000);
+                },3500);
                 break;
             case -6700:
-                ms3.volume = 1;
                 ms3.play();
                 eleFadeIn($('#fadeIn_06'));
                 eleFadeIn($('#fadeIn_07'),2000);
@@ -84,7 +81,6 @@ $(function () {
                 eleFadeIn($('#say5'));
                 break;
             case -10200:
-                ms4.volume = 1;
                 ms4.play();
                 break;
             case -10800:
@@ -104,7 +100,6 @@ $(function () {
                 eleFadeIn($('#fadeIn_10'));
                 break;
             case -15900:
-                ms5.volume = 1;
                 ms5.play();
                 break;
             case -17720:
