@@ -224,14 +224,13 @@ $(function () {
             oLeft = (document.documentElement.clientWidth - jumpBtn.offsetWidth);
         }else if(oLeft >= 5.8){
             oLeft = 5.8;
-        }else if(oLeft >= 5.7){
-            window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
         }
         jumpBtn.style.left = oLeft + "rem";
     });
     jumpBtn.addEventListener('touchend',function (e) {
-        $arrowBox.show();
-        jumpBtn.style.left = .23 + 'rem';
+        //$arrowBox.show();
+        jumpBtn.style.left = 5.8 + 'rem';
+        window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
     });
 
     var timer4 = setInterval(function () {
@@ -344,4 +343,42 @@ $(function () {
     function hideMask(){
         $("#mask").hide();
     }
+
+
+
+    //分享验证配置
+    wx.config({
+        debug: true,// 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。移动端会通过弹窗来提示相关信息。如果分享信息配置不正确的话，可以开了看对应报错信息
+        appId: '<?php echo $signPackage["appId"];?>',
+        timestamp: '<?php echo $signPackage["timestamp"];?>',
+        nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+        signature: '<?php echo $signPackage["signature"];?>',
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',//
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo'
+        ]
+    });
+    //分享信息配置
+    window.share_config = {
+        "share": {
+            "imgUrl": "../images/share.jpg",
+            "desc" : "这，就是回家的意义吧",
+            "title" : '无论你漂到哪里，总有人在家里等你',
+            "link": window.location.href,
+            "success":function(){
+
+            },
+            'cancel': function () {
+
+            }
+        }
+    };
+    wx.ready(function () {
+        wx.onMenuShareAppMessage(share_config.share);//分享给好友
+        wx.onMenuShareTimeline(share_config.share);//分享到朋友圈
+        wx.onMenuShareQQ(share_config.share);//分享给手机QQ
+    });
 });
