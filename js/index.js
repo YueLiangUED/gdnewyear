@@ -348,7 +348,7 @@ $(function () {
 
     //分享验证配置
     wx.config({
-        debug: true,
+        debug: false,
         appId: '',
         timestamp: '',
         nonceStr: '',
