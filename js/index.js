@@ -208,13 +208,14 @@ $(function () {
 
     //页面底部跳转按钮
     var jumpBtn = document.getElementById('jumpBtn'),
-        ww;
+        ww,jumpFlag = false;
     jumpBtn.addEventListener('touchstart',function (e) {
         $arrowBox.hide();
         var touches = e.touches[0];
         ww = touches.clientX - jumpBtn.offsetLeft;
     });
     jumpBtn.addEventListener('touchmove',function (e) {
+        jumpFlag = true;
         var touches = e.touches[0];
         var oLeft = (touches.clientX - ww)/50;
         //console.log(oLeft);
@@ -228,9 +229,13 @@ $(function () {
         jumpBtn.style.left = oLeft + "rem";
     });
     jumpBtn.addEventListener('touchend',function (e) {
-        //$arrowBox.show();
-        jumpBtn.style.left = 5.8 + 'rem';
-        window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
+        $arrowBox.show();
+        if(jumpFlag){
+            $arrowBox.hide();
+            jumpBtn.style.left = 5.8 + 'rem';
+            _hmt.push(['_trackEvent','按钮检测','open','跳转',1]);
+            window.location.href = 'http://h5.gmccopen.com/act/mixllnb!index.action?storeid=&channelId=redian';
+        }
     });
 
     var timer4 = setInterval(function () {
