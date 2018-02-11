@@ -348,14 +348,14 @@ $(function () {
 
     //分享验证配置
     wx.config({
-        debug: true,// 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。移动端会通过弹窗来提示相关信息。如果分享信息配置不正确的话，可以开了看对应报错信息
-        appId: '<?php echo $signPackage["appId"];?>',
-        timestamp: '<?php echo $signPackage["timestamp"];?>',
-        nonceStr: '<?php echo $signPackage["nonceStr"];?>',
-        signature: '<?php echo $signPackage["signature"];?>',
+        debug: true,
+        appId: '',
+        timestamp: '',
+        nonceStr: '',
+        signature: '',
         jsApiList: [
             'checkJsApi',
-            'onMenuShareTimeline',//
+            'onMenuShareTimeline',
             'onMenuShareAppMessage',
             'onMenuShareQQ',
             'onMenuShareWeibo'
