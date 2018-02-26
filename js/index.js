@@ -295,6 +295,7 @@ $(function () {
             musicAudio.play();
             musicAudio.addEventListener('canplay', function () {
                 musicMenu.style.display = 'block';
+                //console.log(1);
                 musicMenu.className = 'music move';
             }, false);
         }
@@ -351,7 +352,7 @@ $(function () {
 
 
 
-    //分享验证配置
+    /*//分享验证配置
     wx.config({
         debug: false,
         appId: '',
@@ -385,5 +386,5 @@ $(function () {
         wx.onMenuShareAppMessage(share_config.share);//分享给好友
         wx.onMenuShareTimeline(share_config.share);//分享到朋友圈
         wx.onMenuShareQQ(share_config.share);//分享给手机QQ
-    });
+    });*/
 });
